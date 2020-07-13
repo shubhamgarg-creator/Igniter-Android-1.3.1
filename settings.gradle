@@ -1,0 +1,2 @@
+include ':app', ':custom-font-style-lib', ':photoview', ':image_cropping', ':instagramhelper', ':signinwithapplebutton'//,':swipedeck'
+

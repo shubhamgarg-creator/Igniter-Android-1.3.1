@@ -1,0 +1,370 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:layout_marginTop="13dp"
+    android:background="@drawable/rect_igniter_plus_corner_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@drawable/gradient_boost"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/circle_white"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/tv_circle_progress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:src="@drawable/ic_boost" />
+            </RelativeLayout>
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_skip_queue_title"
+                style="@style/proximanova_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/outofboost"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_skip_queue_sub_title"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/outofboost_msg"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_boost_price"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/topPanel"
+            android:layout_marginTop="-20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_twelve_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_one_year_save"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_btn"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/save_percentage2"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_twelve_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rect_gray_top_bottom_line">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_twelve_month"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_per_year"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/igniter_twelve_month"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="20sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_per_year"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/boost"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_year_price"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/boost_amount_year"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_six_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_six_month_save"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_btn"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/save_percentage"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_six_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rect_accent_border">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_six_month"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_per_six_month"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/igniter_six_month"
+                        android:textColor="@color/swipearround_gradient_start"
+                        android:textSize="20sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_per_six_month"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/boost"
+                        android:textColor="@color/swipearround_gradient_start"
+                        android:textSize="16sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_six_month_price"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/boost_amount_six_month"
+                        android:textColor="@color/swipearround_gradient_start"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_one_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_btn"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/save_percentage"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_one_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rect_gray_top_bottom_line">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_one_month"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_per_month"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="@string/igniter_one_month"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="20sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_per_month"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/boost"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_month_price"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/boost_amount_month"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llt_boost_price"
+            android:orientation="vertical">
+
+            <com.obs.CustomButton
+                android:id="@+id/btn_boost_me"
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/oval_gradient_blue_btn"
+                android:text="@string/boost_me"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_or"
+                    android:layout_toStartOf="@+id/tv_or"
+                    android:background="@color/gray" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_or"
+                    style="@style/proximanova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_or"
+                    android:layout_toRightOf="@+id/tv_or"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_get_igniter_plus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/oval_btn_blue_border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="@string/igniter_plus"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/get_igniter_one_month_free"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

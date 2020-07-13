@@ -1,0 +1,486 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/edit_profile_bg"
+            android:orientation="vertical">
+
+            <igniter.views.customize.CustomRecyclerView
+                android:id="@+id/rv_edit_profile_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <include
+                        android:id="@+id/rlt_profile_image_one"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/rlt_profile_image_two"
+                            layout="@layout/edit_profile_image_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1" />
+
+                        <include
+                            android:id="@+id/rlt_profile_image_three"
+                            layout="@layout/edit_profile_image_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/rlt_profile_image_six"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/rlt_profile_image_five"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/rlt_profile_image_four"
+                        layout="@layout/edit_profile_image_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/smart_photos"
+                    android:textColor="@color/igniter_red"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_smart_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/switch_smart_photos"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/smart_photos_description"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="12.5sp" />
+            </RelativeLayout>
+
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_about_username"
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/about"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edt_about"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@null"
+                    android:hint="@string/hint_about"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLength="500"
+                    android:textColor="@color/text_light_gray"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="16sp" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_about_count"
+                    style="@style/proximanova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:text="500"
+                    android:textColor="@color/light_gray"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/job_title"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_job_title"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:hint="@string/hint_job_title"
+                android:inputType="textCapSentences"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="16sp" />
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/company_title"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_company"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:hint="@string/hint_company"
+                android:inputType="textCapSentences"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="16sp" />
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/school"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_school"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:hint="@string/hint_school"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="16sp" />
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/show_instagram_photos"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_instagram"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textCapSentences"
+                    android:minLines="2"
+                    android:padding="15dp"
+                    android:text="@string/instagram"
+                    android:textColor="@color/color_accent"
+                    android:textSize="16sp" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_connect"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:inputType="textCapSentences"
+                    android:minLines="2"
+                    android:padding="15dp"
+                    android:text="@string/connect"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/gender"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rdg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <RadioButton
+                    android:id="@+id/rb_man"
+                    style="@style/proximanova_semibold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/gender_man"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_woman"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:text="@string/gender_woman"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/control_profile"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tvAppPlus"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_white"
+                    android:padding="5dp"
+                    android:text="@string/t_plus"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/hide_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_hide_age"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/hide_my_age"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_hide_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hide_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hide_age">
+
+                    <com.obs.CustomTextView
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/hide_my_distance"
+                        android:textColor="@color/black_text_color"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_hide_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/edit_profile_bg" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

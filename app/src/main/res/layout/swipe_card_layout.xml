@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<igniter.swipedeck.layouts.SwipeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipedeck="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="90dp"
+    android:background="@color/gray_back"
+    android:orientation="vertical">
+
+    <igniter.swipedeck.SwipeDeck
+        android:id="@+id/swipe_deck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gray_back"
+        swipedeck:card_spacing="0dp"
+        swipedeck:max_visible="2"
+        swipedeck:preview_layout="@layout/swipe_card_item"
+        swipedeck:render_above="false" />
+
+</igniter.swipedeck.layouts.SwipeRelativeLayout>

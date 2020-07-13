@@ -1,0 +1,199 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rlt_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator" />
+
+            <igniter.views.customize.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_login_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_arrow_top"
+                style="@style/igniter_clone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:padding="5dp"
+                android:text="@string/ic_expand_arrow"
+                android:textColor="@color/gray_text_color"
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+            <com.willowtreeapps.signinwithapplebutton.view.SignInWithAppleButton
+                android:id="@+id/btnapplelogin"
+                style="@style/SignInWithAppleButton.Blackoval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/login_facebook"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_login_facebook"
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/oval_btn_blue"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/login_facebook"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_login_phone"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/oval_btn_gray_border"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/login_phone_number"
+                android:textColor="@color/gray_color"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/signup_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/login_take_policy"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="18sp" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/login_arrow"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="16sp" />
+
+                <com.obs.CustomTextView
+                    style="@style/proximanova_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/login_do_not_contact"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_less"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/arrow_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_do_not_fb"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/login_arrow"
+                        android:textColor="@color/light_gray"
+                        android:textSize="12sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_arrow_bottom"
+                        style="@style/igniter_clone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/ic_expand_btn"
+                        android:textColor="@color/light_gray"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_terms_condition"
+                    style="@style/proximanova_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/login_terms_policy"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

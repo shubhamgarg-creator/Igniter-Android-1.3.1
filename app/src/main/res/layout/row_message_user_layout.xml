@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_user_message_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@color/gray"
+        app:borderWidth="0dp"
+        app:fabSize="auto"
+        app:useCompatPadding="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_new_msg_alert"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignEnd="@+id/civ_user_image"
+        android:layout_alignRight="@+id/civ_user_image"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-9dp"
+        android:background="@drawable/recs_button_white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/civ_new_msg_alert"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:scaleX=".9"
+            android:scaleY=".9"
+            android:src="@drawable/matches_newmatch_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/name_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/civ_user_image"
+        android:layout_toRightOf="@+id/civ_user_image"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_user_name"
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="fgghfghh"
+                android:textColor="@color/black_1"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/civ_super_like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/civ_match_user_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/tv_user_name"
+                android:gravity="center"
+                android:padding="1dp"
+                android:src="@drawable/ic_super_like" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_reply_arrow" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_last_msg"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/last_message"
+                android:textColor="@color/text_semi_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_user_image"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/civ_user_image"
+        android:layout_toRightOf="@+id/civ_user_image">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/very_light_grey" />
+
+    </RelativeLayout>
+</RelativeLayout>

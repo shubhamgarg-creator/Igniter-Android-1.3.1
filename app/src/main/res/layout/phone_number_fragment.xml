@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_phone_number_title"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/phone_title"
+        android:textColor="@color/text_light_gray"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--android:drawableLeft="@drawable/in"
+         android:drawableStart="@drawable/in"
+        -->
+        <!--<com.obs.CustomTextView
+            android:id="@+id/tv_country"
+            style="@style/proximanova_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rect_gray_btn"
+            android:drawableEnd="@drawable/down_arrow"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/down_arrow"
+            android:drawableTint="@color/text_light_gray"
+            android:minHeight="40dp"
+            android:minWidth="70dp"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="91"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/text_light_gray"
+            android:textSize="15sp" /> -->
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/mobile_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:minWidth="70dp"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="91"
+            android:textAlignment="center" />
+
+        <com.obs.CustomEditText
+            android:id="@+id/edt_phone_number"
+            style="@style/proximanova_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rect_gray_btn"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/text_light_gray"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:textSize="15sp">
+
+            <requestFocus />
+        </com.obs.CustomEditText>
+    </LinearLayout>
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_phone_account_kit_desc"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/phone_desc"
+        android:textColor="@color/text_light_gray"
+        android:textSize="12dp" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_next"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rect_gray_btn"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/next"
+        android:textColor="@color/text_light_gray"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF">
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_list_item"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center|left"
+        android:padding="10dp"
+        android:textColor="@color/black_text_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

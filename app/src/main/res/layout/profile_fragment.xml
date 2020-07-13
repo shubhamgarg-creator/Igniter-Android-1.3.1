@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_tab_curve_bg"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llt_edit_settings"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:borderWidth="0dp"
+                app:fabSize="auto"
+                app:useCompatPadding="true" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_user_name_age"
+                style="@style/proximanova_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_user_job"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_user_school"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_user_search_location"
+                style="@style/proximanova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/profile_flight"
+                android:drawablePadding="7dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/london"
+                android:textColor="@color/red_check_mark"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_edit_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tv_settings_icon"
+                    style="@style/igniter_clone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:src="@drawable/settings" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_settings"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/text_light"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/text_search_hint_light" />
+
+            <LinearLayout
+                android:id="@+id/llt_edit_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tv_edit_icon"
+                    style="@style/igniter_clone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:src="@drawable/edit" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_edit_profile"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/edit_info"
+                    android:textColor="@color/text_light"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".90">
+
+        <View
+            android:id="@+id/curve_view"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-23dp"
+            android:layout_marginRight="-23dp"
+            android:layout_marginTop="-85dp"
+            android:background="@drawable/profile_curved_view_bg" />
+
+        <include
+            android:id="@+id/llt_remaining_count"
+            layout="@layout/profile_remaining_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_igniter_plus"
+            android:layout_below="@+id/curve_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_igniter_plus"
+            android:layout_below="@+id/curve_view"
+            android:visibility="gone">
+
+            <igniter.views.customize.IgniterViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:paddingTop="5dp" />
+
+            <igniter.views.customize.CirclePageIndicator
+                android:id="@+id/page_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <com.obs.CustomButton
+            android:id="@+id/btn_igniter_plus"
+            style="@style/proximanova_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/oval_btn_border"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/my_igniter_plus"
+            android:textAllCaps="true"
+            android:textColor="@color/color_accent"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

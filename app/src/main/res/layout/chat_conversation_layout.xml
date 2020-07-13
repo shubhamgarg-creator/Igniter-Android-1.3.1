@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/rlt_header"
+        layout="@layout/header_layout" />
+
+    <igniter.views.customize.CustomRecyclerView
+        android:id="@+id/rv_chat_conversation_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlt_send_msg"
+        android:layout_below="@+id/rlt_header"
+        android:background="@color/white"
+        app:reverseLayout="false"
+        app:stackFromEnd="true" />
+
+    <include
+        android:id="@+id/rlt_empty_chat"
+        layout="@layout/chat_conversation_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlt_send_msg"
+        android:layout_below="@+id/rlt_header"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/chat_input_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_border"
+            android:visibility="gone" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_gif_icon"
+            style="@style/proximanova_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/rect_gif_btn_bg"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/gif"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <com.obs.CustomEditText
+            android:id="@+id/edt_new_msg"
+            style="@style/proximanova_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/tv_gif_icon"
+            android:layout_toLeftOf="@+id/iv_send"
+            android:layout_toRightOf="@+id/tv_gif_icon"
+            android:layout_toStartOf="@+id/iv_send"
+            android:background="@null"
+            android:hint="@string/send_a_message"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="5"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/text_very_dark"
+            android:textColorHint="@color/chat_input_hint"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </com.obs.CustomEditText>
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/chat_input_send" />
+    </RelativeLayout>
+
+</RelativeLayout>

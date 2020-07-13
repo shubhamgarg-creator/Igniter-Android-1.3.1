@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<RelativeLayout
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_white">-->
+        <ImageView
+            android:id="@+id/iv_igniter_plus"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:scaleType="fitXY" />
+        <!--</RelativeLayout>-->
+    </FrameLayout>
+    <!--android:background="@drawable/image_transparent"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_igniter_plus_title"
+            style="@style/proximanova_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="@string/header_igniter_plus"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:visibility="gone" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_title"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_subtitle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_subtitle"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textColor="@color/light_gray1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

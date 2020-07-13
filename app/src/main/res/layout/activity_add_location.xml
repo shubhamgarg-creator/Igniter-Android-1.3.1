@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/search">
+
+    <RelativeLayout
+        android:id="@+id/rlt__top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleX=".4"
+            android:scaleY=".4"
+            android:src="@drawable/back_arrow"
+            android:tint="@color/red_check_mark" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/iv_back"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/actionbar_search_normal" />
+
+        <com.obs.CustomEditText
+            android:id="@+id/edt_search"
+            style="@style/proximanova_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/iv_gps"
+            android:layout_toRightOf="@+id/iv_search"
+            android:background="@null"
+            android:hint="@string/search_location"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black_text_color"
+            android:textColorHint="@color/text_light"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_gps"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/passport_gps_disabled" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlt__top_bar">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".views.profile.AddLocationActivity" />
+
+        <igniter.views.customize.CustomRecyclerView
+            android:id="@+id/rv_location_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_message"
+            android:background="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

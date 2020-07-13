@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlt_marker_top"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_rectangle_passport_marker">
+
+        <ImageView
+            android:id="@+id/iv_flight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-12dp"
+            android:src="@drawable/passport_map_pin_icon" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_address"
+            style="@style/proximanova_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_flight"
+            android:maxLines="2"
+            android:text="@string/place_goto_hint"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_address"
+            android:src="@drawable/passport_chevron" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_bottom_triangle"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_marker_top"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/passport_map_pin_bottomtriangle" />
+
+    <ImageView
+        android:id="@+id/iv_bottom"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/iv_bottom_triangle"
+        android:layout_centerInParent="true"
+        android:src="@drawable/passport_map_location_marker"
+        android:visibility="gone" />
+</RelativeLayout>

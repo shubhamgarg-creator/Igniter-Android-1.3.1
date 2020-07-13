@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/igniter_red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/llt_header_lay"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_left_arrow"
+            style="@style/igniter_clone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:text="@string/ic_left_arrow_key"
+            android:textColor="@color/gray_btn_text"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+    <com.obs.CustomTextView
+        android:id="@+id/tv_first_name_title"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/llt_header_lay"
+        android:text="@string/first_name_title"
+        android:textColor="@color/black_text_color"
+        android:textSize="25sp" />
+
+
+
+
+        <com.obs.CustomEditText
+            android:id="@+id/edt_first_name"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingBottom="18dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:textColor="@color/black_text_color"
+            android:textColorHint="@color/light_gray"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:textSize="20sp"
+            android:theme="@style/EditTextTheme"
+            android:windowSoftInputMode="stateVisible" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_first_name_description"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edt_first_name"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/first_name_description"
+            android:textColor="@color/text_light_gray"
+            android:textSize="16sp" />
+
+
+    <com.obs.CustomButton
+        android:id="@+id/btn_continue"
+        style="@style/proximanova_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/oval_btn_gray"
+        android:text="@string/continue_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/gray_btn_text"
+        android:textSize="23sp" />
+
+</RelativeLayout>

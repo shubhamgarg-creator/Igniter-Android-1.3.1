@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semi_transparent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <View
+            android:id="@+id/view_top_curve"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-75dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="-20dp"
+            android:background="@drawable/profile_curved_view_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view_top_curve"
+            android:layout_marginTop="-15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_group_image_one"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@color/gray"
+                app:borderWidth="0dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:fabSize="auto"
+                app:useCompatPadding="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_group_image_two"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginStart="-15dp"
+                android:src="@color/gray"
+                app:borderWidth="0dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:fabSize="auto"
+                app:useCompatPadding="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_group_image_three"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginStart="-15dp"
+                android:src="@color/gray"
+                app:borderWidth="0dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:fabSize="auto"
+                app:useCompatPadding="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_group_image_four"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginStart="-15dp"
+                android:src="@color/gray"
+                app:borderWidth="0dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:fabSize="auto"
+                app:useCompatPadding="true" />
+
+        </LinearLayout>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_group_title"
+            style="@style/proximanova_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="@string/create_group_title"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6">
+
+        <LinearLayout
+            android:id="@+id/llt_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_choose_friend_count"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/choose_friend"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+        </LinearLayout>
+
+        <igniter.views.customize.CustomRecyclerView
+            android:id="@+id/rv_create_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_max_group_count"
+            android:layout_below="@+id/llt_sub_title"
+            android:background="@color/white" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_max_group_count"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:padding="18dp"
+            android:text="@string/group_max_count"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

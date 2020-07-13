@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:endColor="@color/sign_in_with_apple_button_black"
+        android:startColor="@color/sign_in_with_apple_button_black" />
+    <!-- <solid android:color="@color/login_fb_bg" />-->
+    <corners android:radius="80dp" />
+</shape>

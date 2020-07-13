@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="6dp"
+    android:paddingTop="10dp">
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_igniter_tab_view"
+        style="@style/igniter_clone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="j"
+        android:textColor="@drawable/selector_igniter_tab"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/transparent"
+        android:paddingLeft="20dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rlt_igniter_tab_indicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/recs_button_white">
+
+            <ImageView
+                android:id="@+id/iv_igniter_tab_indicator"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/matches_newmatch_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="35dp"
+        android:paddingTop="2dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/app_logo"
+        android:tint="@drawable/selector_igniter_tab"
+        android:visibility="gone" />
+</RelativeLayout>

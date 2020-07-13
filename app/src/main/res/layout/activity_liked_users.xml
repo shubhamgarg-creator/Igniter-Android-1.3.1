@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="igniter.likedusers.LikedUsersActivity">
+
+    <include
+        android:id="@+id/i_header"
+        layout="@layout/header_layout" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_empty_data"
+        android:visibility="gone"
+        style="@style/proximanova_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_liked_profiles"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_likes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sv_root"
+        app:layout_constraintTop_toTopOf="@+id/i_header" />
+
+
+        <RelativeLayout
+            android:id="@+id/sv_root"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_more_likes"
+            app:layout_constraintTop_toBottomOf="@+id/i_header">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_total_likes_count"
+                style="@style/proximanova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:padding="15dp"
+                android:text="@string/users_likes" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_total_likes_count"
+                android:background="@color/gray_border" />
+
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_gold_status"
+                style="@style/proximanova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_line"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="@string/gold_title" />
+
+            <igniter.views.customize.CustomRecyclerView
+                android:id="@+id/rv_liked_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_gold_status"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+    <com.obs.CustomButton
+        android:id="@+id/btn_more_likes"
+        style="@style/proximanova_bold"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_who_likes_you"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/oval_gradient_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,385 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_margin="12dp"
+    android:layout_marginTop="13dp"
+    android:background="@drawable/rect_igniter_plus_corner_white">
+    <!--android:background="@drawable/gradient_rewind"-->
+    <RelativeLayout
+        android:id="@+id/rlt_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:background="@color/text_light">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_igniter_plus"
+            android:layout_width="match_parent"
+            android:layout_height="260dp" />
+
+        <igniter.views.customize.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:padding="15dp" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_igniter_plus_title"
+            style="@style/proximanova_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/header_igniter_plus"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_tutorial">
+
+        <LinearLayout
+            android:id="@+id/price_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/llt_twelve_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlt_twelve_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_one_year_book"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/bottom_line"
+                    android:paddingTop="10dp">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_twelve_month"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="20sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_per_year"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_twelve_month"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="16sp" />
+
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_one_year_save"
+                        style="@style/proximanova_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_per_year"
+
+                        android:gravity="center"
+                        android:padding="3dp"
+
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_year_price"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_one_year_save"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="18sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_year_total_price"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_year_price"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="18sp" />
+
+
+
+                </RelativeLayout>
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_one_year_book"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/oval_blue_btn"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/best_value"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/llt_six_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlt_six_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_six_month_book"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/rect_blue_border"
+                    android:paddingTop="10dp">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_six_month"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/blue1"
+                        android:textSize="20sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_per_six_month"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_six_month"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/blue1"
+                        android:textSize="16sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_six_month_save"
+                        style="@style/proximanova_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:layout_below="@+id/tv_per_six_month"
+                        android:text="@string/save_percentage"
+                        android:textColor="@color/blue1"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_six_month_price"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_six_month_save"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/blue1"
+                        android:textSize="18sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_six_total_price"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_six_month_price"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/blue1"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_six_month_book"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/oval_blue_btn"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/most_popular"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llt_one_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_one_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_one_month_book"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/bottom_line"
+                    android:paddingTop="10dp">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_one_month"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="20sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_per_month"
+                        style="@style/proximanova_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_one_month"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="16sp" />
+
+                    <com.obs.CustomTextView
+                        style="@style/proximanova_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_per_month"
+                        android:gravity="center"
+                        android:id="@+id/tv_one_month_save"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_month_price"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_one_month_save"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="18sp" />
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_month_total_price"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_month_price"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_one_month_book"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rect_accent_btn"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/best_value"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.obs.CustomButton
+            android:id="@+id/btn_continue"
+            style="@style/proximanova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/price_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/oval_gradient_blue_btn"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="@string/continue_btn"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

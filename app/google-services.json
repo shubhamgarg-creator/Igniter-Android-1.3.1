@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "688272058906",
+    "firebase_url": "https://igniter-6a8b4.firebaseio.com",
+    "project_id": "igniter-6a8b4",
+    "storage_bucket": "igniter-6a8b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688272058906:android:c15f23c9f778b434",
+        "android_client_info": {
+          "package_name": "com.trioangle.igniter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688272058906-rt7p121obre43hdp0p0omvso3i653krn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.igniter",
+            "certificate_hash": "a5e1f9bde2613a28beb89d4422d5767a22a54550"
+          }
+        },
+        {
+          "client_id": "688272058906-43587a693dvvjusmnuckaugj1rof7oek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnNv9BK1-WcYSJKLBsxLqF0Np1ggmHLns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688272058906-43587a693dvvjusmnuckaugj1rof7oek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

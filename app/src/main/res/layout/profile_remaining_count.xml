@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llt_remaining_counts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@+id/llt_super_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/rlt_superlike_lay"
+            android:layout_toStartOf="@+id/rlt_superlike_lay"
+            android:background="@drawable/recs_button_large">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:src="@drawable/ic_drawer_super_like" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_super_likes_count"
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="3"
+                android:textColor="@color/superlike"
+                android:textSize="14sp" />
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_super_likes_count"
+                android:text="@string/super_like"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_super_likes_getmore"
+            style="@style/proximanova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:text="@string/get_more"
+            android:textAllCaps="true"
+            android:textColor="@color/superlike"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_boost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/rlt_superlike_lay"
+            android:layout_toStartOf="@+id/rlt_superlike_lay"
+            android:background="@drawable/recs_button_large">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:src="@drawable/ic_drawer_boost" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_boost_count"
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="3"
+                android:textColor="@color/boost_gradient_top"
+                android:textSize="14sp" />
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_boost_count"
+                android:text="@string/boost"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_boost_getmore"
+            style="@style/proximanova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:text="@string/get_more"
+            android:textAllCaps="true"
+            android:textColor="@color/boost_gradient_top"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_upgrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/rlt_superlike_lay"
+            android:layout_toStartOf="@+id/rlt_superlike_lay"
+            android:background="@drawable/recs_button_large">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:src="@drawable/app_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+
+            <com.obs.CustomTextView
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upgrade"
+                android:textAllCaps="true"
+                android:textColor="@color/text_light"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

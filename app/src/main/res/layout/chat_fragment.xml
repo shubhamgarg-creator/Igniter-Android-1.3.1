@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlt_search"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_search"
+                    android:backgroundTint="@color/red2" />
+
+                <com.obs.CustomEditText
+                    android:id="@+id/et_search"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/iv_search"
+                    android:background="@drawable/bottom_red_line"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textCapWords"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/text_very_dark"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltGold"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="start">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_match_user_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/igniter_gold10"
+                    app:borderWidth="0dp"
+                    app:fabSize="auto"
+                    app:useCompatPadding="true" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_like_count"
+                    style="@style/proximanova_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/civ_match_user_image"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/rlt_new_msg_alert"
+                    android:gravity="center"
+                    android:text="100000+"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/iv_empty_heart"
+                    style="@style/igniter_clone"
+                    android:visibility="gone"
+                    android:layout_alignStart="@+id/civ_match_user_image"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/rlt_new_msg_alert"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/heart_full" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_new_msg_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/civ_match_user_image">
+
+                    <com.obs.CustomTextView
+                        android:id="@+id/tv_gold_title"
+                        style="@style/proximanova_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="10+ Likes You have"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="14sp" />
+
+                    <com.obs.CustomTextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_gold_description"
+                        style="@style/proximanova_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_gold_title"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/get_igniter_gold_to_match_know"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_empty_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_empty_chat_image"
+                    style="@style/igniter_clone"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="10dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/no_matches_placeholder" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_swipe"
+                    style="@style/proximanova_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_empty_chat_image"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/get_swipe"
+                    android:textColor="@color/text_dark_gray"
+                    android:textSize="25sp" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_swipe_message"
+                    style="@style/proximanova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_swipe"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/chat_empty_message"
+                    android:textAlignment="center"
+                    android:textColor="@color/grand_gesture_activation_instruction_text"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llt_empty_search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llt_empty_new_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.obs.CustomTextView
+                            android:id="@+id/tv_new_match_title"
+                            style="@style/proximanova_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:paddingEnd="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="10dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:text="@string/new_matches"
+                            android:textColor="@color/color_accent"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <com.obs.CustomTextView
+                            android:id="@+id/tv_new_match_count"
+                            style="@style/proximanova_regular"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/circle_accent"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <igniter.views.customize.CustomRecyclerView
+                        android:id="@+id/rv_new_matches_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:clipToPadding="false"
+                        android:overScrollMode="always"
+                        android:paddingLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:scrollbars="none" />
+                </LinearLayout>
+
+                <com.obs.CustomTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_messages_title"
+                    style="@style/proximanova_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/messages"
+                    android:textColor="@color/color_accent"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <igniter.views.customize.CustomRecyclerView
+                    android:id="@+id/rv_message_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:overScrollMode="always"
+                    android:scrollbars="none" />
+
+                <ImageView
+                    android:id="@+id/iv_empty_message_image"
+                    style="@style/igniter_clone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:src="@drawable/message_placeholder"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_empty_search_image"
+                style="@style/igniter_clone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:src="@drawable/app_search_no_matches"
+                android:visibility="gone" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_no_match"
+                style="@style/proximanova_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_matches_found"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

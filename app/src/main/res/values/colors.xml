@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#ffffff</color>
+    <color name="color_primary_dark">#000000</color>
+    <color name="color_accent">#fd5068</color>
+
+    <color name="black">#000000</color>
+    <color name="profile_tab_curve_bg">#f5f7fa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#eaeaea</color>
+    <color name="gray1">#eeeeee</color>
+    <color name="light_gray">#cfcfcf</color>
+    <color name="light_gray1">#EEEEEE</color>
+    <color name="gray_back">#f6f7fb</color>
+    <color name="text_light_gray">#8f8f8f</color>
+    <color name="text_dark_gray">#4b4b4b</color>
+
+    <color name="gray_indicator">#dadfe6</color>
+    <color name="login_fb_bg">#404599</color>
+    <color name="login_fb_bg1">#387AB6</color>
+
+    <color name="text_dark">#555555</color>
+    <color name="text_hint_color">#bbbbbb</color>
+    <color name="text_light">#c0c0c0</color>
+    <color name="text_search_hint_light">#e6e6e6</color>
+    <color name="text_semi_dark">#888888</color>
+    <color name="text_very_dark">#4d4d4d</color>
+
+    <color name="igniter_plus_bg">#f7f7f7</color>
+    <color name="igniter_plus_gray">#7f7f7f</color>
+    <color name="igniter_plus_light_gray">#cfcfcf</color>
+    <color name="igniter_plus_dark_gray">#4b4b4b</color>
+
+    <color name="gray_text_color">#cfcfcf</color>
+    <color name="tab_gray_text_color">#D8DDE6</color>
+    <color name="very_light_grey">#e2e2e2</color>
+    <color name="black_text_color">#4b4b4b</color>
+    <color name="gray_border">#dbd8d8</color>
+    <color name="gray_color">#9d9d9d</color>
+
+    <color name="red">#ee6d4a</color>
+    <color name="semi_transparent">#99000000</color>
+
+    <color name="btn_yellow">#ffbb05</color>
+    <color name="btn_violet">#a451df</color>
+    <color name="btn_green">#3de8bd</color>
+    <color name="btn_blue">#26b7ff</color>
+
+    <color name="gray_btn_bg">#f9f9f9</color>
+    <color name="gray_btn_text">#e5eaee</color>
+
+    <color name="rose">#fd3478</color>
+    <color name="orange">#ff7657</color>
+    <color name="edit_profile_gray">#ffeeeeee</color>
+    <color name="edit_profile_bg">#fff5f5f5</color>
+
+    <color name="boost_gradient_top">#924dd1</color>
+
+    <color name="chat_user_bg">#f4f4f4</color>
+    <color name="chat_other_user_bg">#2eb3c9</color>
+
+    <!--SwipeRefreshLayout-->
+    <color name="blue">#1976d2</color>
+    <color name="green">#689f38</color>
+    <color name="brown">#795548</color>
+
+
+    <color name="black_1">#242424</color>
+    <color name="blue1">#2180e8</color>
+    <color name="blue2">#34abff</color>
+    <color name="boost_guage_empty_color">#dadfe6</color>
+    <color name="boost_perk_gradient_end">#7c48c3</color>
+    <color name="boost_perk_gradient_start">#cf59ff</color>
+
+    <color name="chat_input_background">#fff6f6f6</color>
+    <color name="chat_input_default_border">#ffeaeaea</color>
+    <color name="chat_input_hint">#ffcecece</color>
+    <color name="chat_outbound_bubble_background">#21b8fc</color>
+
+    <color name="gold1">#e9aa43</color>
+    <color name="gold2">#e09220</color>
+    <color name="gold3">#e9aa43</color>
+    <color name="grand_gesture_activation_instruction_text">#b7b7b7</color>
+    <color name="gray_very_light">#e0e0e0</color>
+
+    <color name="places_green">#33cb8b</color>
+    <color name="premium_blue">#298bf9</color>
+
+
+    <color name="red2">#ff0000</color>
+    <color name="red1">#fd5068</color>
+    <color name="red_check_mark">#ff6a6a</color>
+    <color name="rewind_perk_gradient_end">#ffa104</color>
+    <color name="rewind_perk_gradient_start">#ffcd01</color>
+
+    <color name="choose_gradient_end">#DD19A9</color>
+    <color name="choose_gradient_start">#FB1D82</color>
+
+
+    <color name="controlprofile_gradient_end">#FF5D4D</color>
+    <color name="controlprofile_gradient_start">#FF9813</color>
+
+    <color name="swipearround_gradient_end">#13449D</color>
+    <color name="swipearround_gradient_start">#5267E3</color>
+
+    <color name="turnoffads_gradient_start">#80848F</color>
+
+
+    <color name="superlike">#3ca4ff</color>
+    <color name="superlike_paywall_button_gradient_end">#2ba2ff</color>
+    <color name="superlike_perk_gradient_end">#1c85d9</color>
+    <color name="superlike_perk_gradient_start">#0aceff</color>
+
+
+    <color name="igniter_red">#f16464</color>
+    <color name="igniter_red_translucent">#66f16464</color>
+    <color name="igniter_select_gradient_start">#8026617f</color>
+    <color name="translucent_gray_light">#b3ffffff</color>
+    <color name="unlimited_likes_perk_gradient_end">#31cf82</color>
+    <color name="unlimited_likes_perk_gradient_start">#41ffb3</color>
+
+    <color name="rippelColor">#0099CC</color>
+    <color name="light_blue_button_color">#ff1fbad6</color>
+    <color name="text_black">#de000000</color>
+    <color name="destination_red_marker">#fff32f00</color>
+    <color name="cancel_disable_grey">#37000000</color>
+
+</resources>

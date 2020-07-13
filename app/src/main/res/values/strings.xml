@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY appname "Igniter">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="package_name">com.trioangle.igniter</string>
+    <string name="version">Version 1.3.1</string>
+
+    <string name="base_url">"http://websoftquality.com/dating/public/api/"</string>
+    <string name="share_url">"http://websoftquality.com/dating/public/admin/login"</string>
+    <string name="redirect_url">"http://websoftquality.com/dating/public/"</string>
+    <string name="apple_redirect_url">"http://websoftquality.com/dating/public/api/apple_callback"</string>
+
+<!--    <string name="base_url">"http://websoftquality.com/public/api/"</string>-->
+<!--    <string name="share_url">"http://websoftquality.com/public/admin/login"</string>-->
+<!--    <string name="redirect_url">"http://websoftquality.com/public/"</string>-->
+<!--    <string name="apple_redirect_url">"http://websoftquality.com/public/api/apple_callback"</string>-->
+
+    <!-- Facebook User -->
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN" translatable="false">e0696b8fe5c76dbc50d0b284eb21d3b9</string>
+    <string name="facebook_app_id">315577008925772</string>
+    <string name="fb_login_protocol_scheme">fb315577008925772</string>
+
+    <!-- Google map and place API key -->
+    <string name="google_maps_key">AIzaSyDJ6wbuMgKlCG4hCFlYBuKha4AeV7PaxSs</string>
+
+    <!-- Google play console publish key for In App Purchase -->
+    <string name="google_play_publish_key">"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgaX/dENMYNX3DLHDBPH6qitOpnBBLw4osWGy/xaxM9ob3FviDqM+OFp/HKX34OzGpWLx5QllxkyBYQqDvNtmGtc/C5VvlFaaHdiPX+6vQax9AVLtK9W6eMqMCcpuDyWjdJXLm6xkovgXkexk8MBAdw6bDoK00ThRDf5rB8gzazJVUmLIsvANYLcQKzQcbWDxRo6dMdx1zpAK82MUutpi6tuhxkUFJYfan1UM9BYzhv+w37GgMampcw7dYQcHEvH7gtUyCFpEwGKAOBNWbYjIe2TJTlOTIrMqq+8yoIdsiGB0kNTnhfelmWFXqblqu7uUhd2EP2n9cNoTk9vnWLyfYwIDAQAB"</string>
+
+    <string name="isLive">"true"</string>
+
+
+    <string name="payment_type">"play_store"</string>
+    <string name="help_url">"contacts"</string>
+    <string name="privacy_url">"page/privacy_policy"</string>
+    <string name="terms_url">"page/terms_of_use"</string>
+
+
+
+
+    <!--In App Purchase Plan id from Google Play Console-->
+    <string name="iap_boost_1">"1_boost"</string>
+    <string name="iap_boost_5">"5_boost"</string>
+    <string name="iap_boost_10">"10_boost"</string>
+
+    <string name="iap_superlike_5">"5_super_likes"</string>
+    <string name="iap_superlike_25">"25_super_likes"</string>
+    <string name="iap_superlike_60">"60_super_likes"</string>
+
+    <string name="iap_gold_1">"igniter_gold_monthly"</string>
+    <string name="iap_gold_6">"igniter_gold_half_yearly"</string>
+    <string name="iap_gold_12">"igniter_gold_yearly"</string>
+
+    <string name="iap_plus_1">"igniter_plus_monthly"</string>
+    <string name="iap_plus_6">"igniter_plus_half_yearly"</string>
+    <string name="iap_plus_12">"igniter_plus_yearly"</string>
+
+
+    <string name="leanhowfb">https://www.accountkit.com/faq</string>
+    <string name="cookieuse">https://m.facebook.com/policies/cookies/</string>
+
+
+    <!--Need To Delete this Temp String-->
+    <string name="phone_number">+917904832423</string>
+    <string name="chat_conversation_title">%1$s</string>
+    <string name="you_matched">"You matched with "</string>
+    <string name="tell_us_why">"Tell us why..."</string>
+    <string name="report_user">"Report User"</string>
+    <string name="report_user_msg">"This is the person bothering you? Tell us what they did"</string>
+    <string name="unmatch">"Report"</string>
+    <string name="search_location">"Search locations"</string>
+    <string name="chat_msg">"Staring at this screen won't start a conversation"</string>
+
+    <!--Temp String-->
+    <string name="done">Done</string>
+    <string name="okay">Okay</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="please_enable_permissions">Please enable app permissions</string>
+    <string name="please_enable_location">Please enable location services</string>
+    <string name="network_failure">Please check your Internet Connection</string>
+    <string name="internal_server_error">Please try again after sometimes.</string>
+
+    <!--Login-->
+    <string name="login_facebook">LOG IN WITH FACEBOOK</string>
+    <string name="login_phone_number">LOG IN WITH PHONE NUMBER</string>
+    <string name="login_take_policy">We take your policy seriously</string>
+    <string name="login_arrow">We don\'t post anything to Facebook.</string>
+    <string name="login_terms_policy">By signing in, you agree with our <![CDATA[<u>Terms of\n Service</u> and <u>Privacy Policy</u>]]></string>
+    <string name="login_do_not_contact">Other user cannot contact you unless you\'ve\n already been matched.</string>
+
+    <!--Profile-->
+    <string name="settings">SETTINGS</string>
+    <string name="edit_info">EDIT INFO</string>
+    <string name="igniter_plus">GET &appname; PLUS</string>
+    <string name="my_igniter_plus">MY &appname; PLUS</string>
+    <string name="already_purchased">"Restore Failed. Your subscription is currently tied to an existing &appname;
+        account."</string>
+    <string name="friends_connect_description">We compare your Facebook friends with those of your matches to display any common connections.</string>
+
+    <string name="header_settings">Settings</string>
+    <string name="header_edit_info">Edit Profile</string>
+    <string name="header_igniter_plus">Get &appname; Plus</string>
+    <string name="header_igniter_gold">Get &appname; Gold</string>
+    <string name="header_username">Username</string>
+
+    <string name="friends_connect_count">25 Friends for Common Connections</string>
+    <string name="recommend_friend">Recommend</string>
+    <string name="share_guy">"I found a guy for you. Get on &appname; and let me know what you think :)"</string>
+    <string name="share_girl">"I found a girl for you. Get on &appname; and let me know what you think :)"</string>
+    <string name="recommend_to_friend">TO A FRIEND</string>
+    <string name="recommend_to_friends">to Friends </string>
+    <string name="get_gold">"Get &appname; Gold"</string>
+    <string name="my_gold">"My &appname; Gold"</string>
+    <!--Create Group-->
+    <string name="group_max_count">You can add up to 3 friends</string>
+    <string name="create_group_title">Create a group to swipe with friends</string>
+    <string name="choose_friend">Choose at least 1 friend to continue</string>
+
+
+    <!--Chat-->
+    <string name="messages">Messages</string>
+    <string name="new_matches">New Matches</string>
+    <string name="get_swipe">Get swiping</string>
+    <string name="chat_empty_message">"When you match with other users \n they'll" appear here where you can send them a message"</string>
+    <string name="search">Search</string>
+    <string name="match_title">It\'s a Match!</string>
+    <string name="match_description">You and %s have liked each other.</string>
+    <string name="matches">Matches</string>
+    <string name="send_message">SEND A MESSAGE</string>
+    <string name="keep_swiping">KEEP SWIPING</string>
+    <string name="tell_friends">Tell your friends</string>
+    <string name="send_a_message">Type a message...</string>
+    <string name="gif">GIF</string>
+
+    <!--SignUp-->
+    <string name="phone_title">Enter your mobile number</string>
+    <string name="phone_desc">\t Tap Next to verify your account with One Time Password powered by &appname;. An SMS may be sent to verify your number.</string>
+    <string name="next">Next</string>
+
+    <string name="otp_title">Enter the code that was sent to</string>
+    <string name="continue_btn">Continue</string>
+    <string name="resend_code">I didn\'t receive a code</string>
+    <string name="accept_term_policy">"Tap Continue to accept Facebook\'s <![CDATA[<u>Terms,</u> <u>Data Policy</u> and <u>cookie use</u> and the <u>Privacy Policy</u> and <u>Terms of Service</u>]]> of &appname;.</string>
+    <string name="accept_term_policys">"<![CDATA[The <u>Privacy Policy</u> and <u>Terms of Service</u>]]> of &appname;.</string>
+
+    <string name="resent_title">If you haven\'t received a code:</string>
+    <string name="verify_mobile_number">Verify your mobile number</string>
+    <string name="sms_inbox">Check your SMS inbox</string>
+    <string name="send_sms_again">Send SMS Again</string>
+    <string name="code_from_voice_call">Enter your code from Voice Call</string>
+    <string name="valid_phone_number_alert">Please enter a valid phone number.</string>
+    <string name="try_again">Try Again</string>
+    <string name="try_again_icon">!</string>
+    <string name="verify_code_error_msg">We couldn\'t verify your code.\nPlease try again.</string>
+    <string name="verifying_number">Verifying your number…</string>
+    <string name="verifying_code">Verifying your code…</string>
+    <string name="verified">Verified!</string>
+    <string name="sent">Sent!</string>
+
+    <string name="i_am_a">I am a</string>
+    <string name="woman">WOMAN</string>
+    <string name="man">MAN</string>
+
+    <string name="first_name_title">My first\nname is</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name_title">My last\nname is</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name_description">This is how it will appear in &appname;</string>
+
+    <string name="password_title">My\npassword is</string>
+    <string name="password_hint">Password</string>
+    <string name="password_restriction">Your password should contain 1 letter, 1 number, and at least 8 characters.</string>
+
+    <string name="birthday_title">My\nbirthday is</string>
+    <string name="birthday_hint"> D  D / M  M / Y  Y  Y  Y </string>
+    <string name="birthday_description">Your age will be public. Minimum age should be %d.</string>
+
+    <string name="email_title">My\nemail is</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_valid">Your password is valid.</string>
+    <string name="email_description">Please enter your email in order to recover your account later.</string>
+    <string name="signup">SIGN UP</string>
+    <string name="skip">SKIP</string>
+
+    <string name="profile_pick_title">My\nbest pic is</string>
+    <string name="profile_pick_alert">Please select your profile picture.</string>
+    <string name="add_photo">Add your photo</string>
+    <string name="camera">Camera</string>
+    <string name="camera_roll">Camera roll</string>
+    <string name="plus_sign">+</string>
+    <string name="t_plus">I+</string>
+
+
+    <!--Settings-->
+    <string name="get_more">Get more</string>
+    <string name="refill">Tap to Refill Now</string>
+    <string name="find_people">"Finding people near you."</string>
+    <string name="no_one">"There's no one new around you.</string>
+    <string name="gold_dec">Unlock Our Most Exclusive Features</string>
+    <string name="plus_dec">Unlimited Likes &amp; More!</string>
+    <string name="get_boosts">Get Boosts</string>
+    <string name="get_super_likes">Get Super Likes</string>
+    <string name="discovery_setting">Discovery Settings</string>
+    <string name="swipe_in">Swiping in</string>
+    <string name="current_location">My Current Location</string>
+    <string name="power_on">Power On</string>
+    <string name="add_new_location">Add a new location</string>
+    <string name="swipe_description">Change your swipe location to see &appname; members in other cities.</string>
+    <string name="show_me">Show Me</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="max_distance">Maximum Distance</string>
+    <string name="miles">%s mi.</string>
+    <string name="kilometer">%s km.</string>
+    <string name="age_range">Age Range</string>
+    <string name="age">%1$s - %2$s</string>
+    <string name="age_range_description">&appname; uses these preferences to suggest matches. Some match suggestions may not fall within your desired parameters.</string>
+    <string name="show_me_on_igniter">Show me on &appname;</string>
+    <string name="show_me_description">You won\'t show up in the card stack but can still message your existing matches.</string>
+    <string name="web_profile">Web Profile</string>
+    <string name="user_name">Username</string>
+    <string name="view_profile">View Profile</string>
+    <string name="share_my_url">Share My URL</string>
+    <string name="claim_your">Claim yours</string>
+    <string name="user_name_description">Create a username. Share your username. Have people all over the world swipe you right on &appname;.</string>
+    <string name="app_setting">App Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="message_like">Message Likes</string>
+    <string name="super_like">Super Likes</string>
+    <string name="show_distance">Show Distances in</string>
+    <string name="km">Km.</string>
+    <string name="mile">Mi.</string>
+    <string name="miles_away">miles away</string>
+    <string name="km_away">km away</string>
+    <string name="less_km_away">Less then a km away</string>
+    <string name="less_mi_away">Less then a mile away</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="share_igniter">Share &appname;</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="legal">Legal</string>
+    <string name="license">Licenses</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_service">Terms of Service</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="username_hint">igniter.com/@</string>
+    <string name="error_msg">"Username already taken"</string>
+    <string name="confirm">Confirm</string>
+    <string name="del">Delete</string>
+
+    <!--Edit Profile-->
+    <string name="smart_photos">Smart Photos</string>
+    <string name="smart_photos_description">Smart Photos continuously tests all your profile photos and picks the best one to show first.</string>
+    <string name="about">About %s</string>
+    <string name="hint_about">About Me</string>
+    <string name="job_title">Job Title</string>
+    <string name="hint_job_title">Add job title</string>
+    <string name="company_title">Company</string>
+    <string name="hint_company">Add company</string>
+    <string name="school">School</string>
+    <string name="hint_school">Add school</string>
+    <string name="show_instagram_photos">Show my Instagram Photos</string>
+    <string name="instagram">Instagram</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="gender">Gender</string>
+    <string name="gender_man">Man</string>
+    <string name="gender_woman">Woman</string>
+    <string name="control_profile">Control Your Profile</string>
+    <string name="hide_my_age">Don\'t Show My Age</string>
+    <string name="hide_my_distance">Make My Distance Invisible</string>
+
+    <!--Igniter Page-->
+    <string name="alert_like_title">Like?</string>
+    <string name="like">LIKE</string>
+    <string name="alert_like_msg">Tapping the heart indicates you liked %s.</string>
+    <string name="cancel">CANCEL</string>
+    <string name="alert_not_interest_title">Not Interested?</string>
+    <string name="alert_not_interest_msg">Tapping the X indicates you\'re not interested in %s.</string>
+    <string name="not_interest">NOT INTERESTED</string>
+    <string name="alert_super_like_title">Super Like %s?</string>
+    <string name="super_like_btn">SUPER LIKE</string>
+    <string name="alert_super_like_msg">You\'re about to Super Like for the first time. This will let %s know that you\'re Super Liked them.</string>
+
+    <!--Get Igniter Plus-->
+    <string name="save_percentage">Save 25%</string>
+    <string name="save_percentage2">Save 39%</string>
+    <string name="most_popular">MOST POPULAR</string>
+    <string name="best_value">BEST VALUE</string>
+    <string name="months">months</string>
+    <string name="month">month</string>
+    <!--\u20B9-->
+    <string name="igniter_plus_amount_month">"$10/mo"</string>
+    <string name="igniter_plus_amount_six_month">"$15/mo"</string>
+    <string name="igniter_plus_amount_year">"$20/mo"</string>
+    <string name="igniter_twelve_month">12</string>
+    <string name="igniter_six_month">6</string>
+    <string name="igniter_one_month">1</string>
+
+    <string name="unlimited_swipe_title">Unlimited Right Swipes</string>
+    <string name="unlimited_swipe_subtitle">Swipe as much as you like.</string>
+    <string name="unlimited_like_title">Unlimited Likes</string>
+    <string name="unlimited_like_subtitle">Give me the ability to like as many people as I want</string>
+    <string name="skip_queue_title">Skip the queue</string>
+    <string name="skip_queue_subtitle">Be the top profile in your area for 30 minutes to get more matches.</string>
+    <string name="boost_title">&appname; Boost</string>
+    <string name="boost_subtitle">Give me 1 free Boost every month.</string>
+    <string name="control_who_see_you_title">Control Who You See</string>
+    <string name="control_who_see_you_subtitle">It\'s simple now to choose the type of people you want to see on &appname;.</string>
+    <string name="balanced_recommend_title">Balanced Recommendations</string>
+    <string name="balanced_recommend_subtitle">See the most relevant people to you (default setting)</string>
+    <string name="recent_active_title">Recently Active</string>
+    <string name="recent_active_subtitle">See the most recently active people first</string>
+    <string name="control_who_sees_you_title">Control Who Sees You</string>
+    <string name="control_who_sees_you_subtitle">Only be shown to certain types of people on &appname;.</string>
+    <string name="standard_title">Standard</string>
+    <string name="standard_subtitle">Only be shown to certain types of people for individual recommendations.</string>
+    <string name="liked_people_title">Only People I\'ve Liked</string>
+    <string name="liked_people_subtitle">Only people I\'ve right swiped will see me</string>
+    <string name="control_profile_title">Control Your Profile</string>
+    <string name="control_profile_subtitle">Make parts of your profile information invisible to other people</string>
+    <string name="super_like_title">Get Extra Super Likes</string>
+    <string name="super_like_subtitle">Get 5 Super Likes every day and triple your chance of a match.</string>
+    <string name="extra_super_like_title">Extra Super Likes Swipes</string>
+    <string name="extra_super_like_subtitle">Give me 5 Super Likes every day.</string>
+    <string name="passport_location_title">Passport To Any Location</string>
+    <string name="passport_location_subtitle">Match with people all around the world. Paris. Los Angels. Sydney. Go!</string>
+    <string name="location">Location</string>
+    <string name="my_current_location">My Current Location</string>
+    <string name="rewind_last_swipe_title">Rewind Your Last Swipe</string>
+    <string name="rewind_last_swipe_subtitle">Accidentally swiped on someone? Rewind and swipe again.</string>
+    <string name="rewind_last_swipe">Rewind Last Swipe</string>
+    <string name="rewind_swipe_toggle">Give me the ability to rewind my last swipe</string>
+    <string name="hide_ads_title">Hide Ads</string>
+    <string name="hide_ads_subtitle">Enjoy a completely ad free experience.</string>
+    <string name="hide_ads_toggle">Hide Advertisements</string>
+
+    <!--Boost Dialog-->
+    <string name="boost_me">BOOST ME</string>
+    <string name="get_igniter_one_month_free">(1 free Boost every month).</string>
+    <string name="or">or</string>
+    <string name="boost">Boosts</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="boost_amount_month">"$15/ea"</string>
+    <string name="boost_amount_six_month">"$20/ea"</string>
+    <string name="boost_amount_year">"$25/ea"</string>
+    <string name="outofboost">Out of Boosts!</string>
+    <string name="outofboost_msg">Be the top profile in your area for 30 minutes to get more matches.</string>
+    <string name="Youwillexit">You will exit out of this sign up and all your informations will be deleted</string>
+    <string name="areyousure">Are you sure ?</string>
+    <string name="not_found">Not found</string>
+    <string name="searching">Searching...</string>
+    <string name="gotos">Goto</string>
+    <string name="deleteusername">Delete Username</string>
+    <string name="suretodel">Are you sure you want to delete your username?</string>
+    <string name="suretolog">Are you sure you want to logout?</string>
+
+    <!--Igniter Gold-->
+
+    <string-array name="igniter_gold_slide_subtitle">
+        <item>"Match with them instanly"</item>
+        <item>"Swipe Rigth as much as you want"</item>
+        <item>"Skip the line &amp; get more matches!"</item>
+        <item>"Only be shown to people you've liked"</item>
+        <item>"Limit what others see with Igniter Plus"</item>
+        <item>"You're 3x more likely to get a match!"</item>
+        <item>"Passport to anywhere!"</item>
+        <item>"Go back and swipe again!"</item>
+        <item>"Have fun swiping"</item>
+    </string-array>
+
+    <string-array name="igniter_gold_slide_title">
+        <item>"See Who Likes You"</item>
+        <item>"Unlimited Likes"</item>
+        <item>"Get 1 free Boost every month"</item>
+        <item>"Choose Who See You"</item>
+        <item>"Control Your Profile"</item>
+        <item>"5 Super Likes every day"</item>
+        <item>"Swipe Around The World"</item>
+        <item>"Unlimited Rewinds"</item>
+        <item>"Turn Off Ads"</item>
+    </string-array>
+
+    <string-array name="igniter_gold_slide_icon">
+        <item>@drawable/igniter_gold_heart</item>
+        <item>@drawable/ic_likes</item>
+        <item>@drawable/ic_boost</item>
+        <item>@drawable/ic_choose</item>
+        <item>@drawable/ic_control</item>
+        <item>@drawable/ic_super_like</item>
+        <item>@drawable/ic_swipe_arround</item>
+        <item>@drawable/ic_rewind</item>
+        <item>@drawable/ic_turnoff</item>
+    </string-array>
+
+
+    <string-array name="country_code">
+        <item>+91</item>
+        <item>+100</item>
+        <item>+40</item>
+        <item>+41</item>
+        <item>+65</item>
+        <item>+977</item>
+    </string-array>
+
+    <string-array name="country_name">
+        <item>India</item>
+        <item>China</item>
+        <item>Usa</item>
+        <item>Japan</item>
+        <item>Singapore</item>
+        <item>Russia</item>
+    </string-array>
+
+    <string-array name="photo_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="slide_icon">
+        <!--<item>@drawable/app_logo</item>-->
+        <item>@drawable/ic_boost</item>
+        <item>@drawable/ic_super_like</item>
+        <item>@drawable/ic_swipe_around1</item>
+        <item>@drawable/ic_choose</item>
+        <item>@drawable/rewind_gradient</item>
+        <item>@drawable/ic_likes</item>
+    </string-array>
+
+    <string-array name="slide_title">
+        <!-- <item>Get &appname; Gold</item>-->
+        <item>Get Matches Faster</item>
+        <item>Stand Out With Super Likes</item>
+        <item>Swipe Around The World!</item>
+        <item>Control Your Profile</item>
+        <item>I Meant to Swipe Right.</item>
+        <item>Increase Your Changes</item>
+    </string-array>
+
+    <string-array name="slide_description">
+        <!-- <item>See who Likes You &amp; more!</item>-->
+        <item>"Boost your profile once a month!"</item>
+        <item>You\'re 3x more likely to get a match</item>
+        <item>Passport to anywhere with &appname; Plus!</item>
+        <item>Limit what others see with &appname; Plus.</item>
+        <item>Get unlimited Rewinds with &appname; Plus!</item>
+        <item>Get unlimited likes with &appname; Plus!</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="backslash">/</string>
+    <string name="d">D</string>
+    <string name="m">M</string>
+    <string name="y">Y</string>
+    <string name="no_matches_found">No Matches Found</string>
+    <string name="plus">+</string>
+    <string name="report">Report &#160;</string>
+
+    <string name="layout_direction">0</string>
+    <string name="mobile_verification">Mobile Verification</string>
+    <string name="please_enter_mobile_number">Please enter your mobile number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="default_direction" translatable="false">0</string>
+    <string name="otp_send_to_phone_description">"We have sent you access code via SMS \n for mobile number verification"</string>
+    <string name="send_OTP_again_in">You can send OTP again in</string>
+    <string name="resend_otp">"Didn't Receive the OTP?"</string>
+    <string name="enter_valid_otp">Enter valid OTP!</string>
+    <string name="resend">Resend Code</string>
+    <string name="otp_number_alert">Please enter the OTP</string>
+
+
+    // copied
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="username">UserName</string>
+    <string name="er_maps_create">Sorry! unable to create maps</string>
+    <string name="error_purchasing">Error purchasing</string>
+    <string name="er_verfn_failed">Error purchasing. Authenticity verification failed.</string>
+    <string name="subscribed_boost">Thank you for subscribing to infinite Boost!</string>
+    <string name="pbm_inapp_set">Problem setting up in-app billing</string>
+    <string name="er_query_inventry">Error querying inventory. Another async operation in progress.</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="press_back_exit">Press back again to exit.</string>
+    <string name="er_consume">Error while consuming</string>
+    <string name="failed_query_inv">Failed to query inventory</string>
+    <string name="er_consume_boost">Error consuming Boost. Another async operation in progress.</string>
+    <string name="no_boost_count">No Boost Count</string>
+    <string name="er_lanch_another_process">Error launching purchase flow. Another async operation in progress.</string>
+    <string name="er_purchase">Error while purchase</string>
+    <string name="otp">OTP</string>
+    <string name="loading">Loading ...</string>
+    <string name="place_goto_hint">Goto London \nlondon</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+    <string name="london">London</string>
+    <string name="empty">empty</string>
+    <string name="name">name</string>
+    <string name="last_message">Last Message</string>
+    <string name="reason">Reason</string>
+    <string name="gold">Gold</string>
+    <string name="nope">NOPE</string>
+    <string name="super_like_line">Super\nLike</string>
+    <string name="title">Title</string>
+    <string name="language">Language</string>
+    <string name="selectlanguage">Select Language</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>es</item>
+    </string-array>
+
+    <string name="msg_login_success">Login Success</string>
+    <string name="msg_already_exist">Phone Number Already Exist Please Login...</string>
+    <string name="msg_acct_deactivated">Your Account Deactivated..Please Contact Admin</string>
+    <string name="msg_user_claimed">Username claimed successfully</string>
+    <string name="msg_user_already_taken">The User name has already been taken.</string>
+    <string name="msg_token_expired">Token Expired</string>
+
+    <string name="res_current_location">My Current Location</string>
+    <string name="sub_month">Month</string>
+    <string name="sub_months">Months</string>
+    <string name="sub_super_like">Super Like</string>
+    <string name="sub_super_likes">Super Likes</string>
+    <string name="sub_boost">Boost</string>
+    <string name="sub_boosts">Boosts</string>
+
+    <string name="UNMATCH">Unmatch</string>
+    <string name="BLOCK">Block</string>
+    <string name="MUTE_NOTIFICATION">Mute\nNotification</string>
+    <string name="REPORT">Report</string>
+    <string name="no_location_found">No location found</string>
+    <string name="super_like_already_purchased">Super like already purchased…</string>
+    <string name="boost_already_purchased">Boost already purchased…</string>
+    <string name="users_likes">%s likes</string>
+    <string name="users_like">%s like</string>
+    <string name="gold_title">Upgrade to Gold to see people \nwho have already liked you</string>
+    <string name="see_who_likes_you">See who likes you</string>
+    <string name="tap_to_reload">Tap to reload</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+    <string name="no_liked_profiles">No user liked you yet</string>
+    <string name="gold_tilte">%s+ People likes you</string>
+    <string name="gold_tilte_empty">See People who likes you</string>
+    <string name="get_igniter_gold_to_match_know">Get &appname; Gold to match now!</string>
+    <string name="liked">Liked</string>
+    <string name="noped">Nope</string>
+    <string name="super_liked">Super Liked</string>
+    <string name="save">Save&#160;</string>
+    <string name="total">Total&#160;:&#160;</string>
+
+    <string-array name="QUICK_MENU_TITLE">
+        <item>Unmatch</item>
+        <item>Report</item>
+    </string-array>
+    <string-array name="QUICK_CHAT_MENU_TITLE">
+        <item>Unmatch</item>
+        <item>Block</item>
+        <item>Report</item>
+    </string-array>
+</resources>

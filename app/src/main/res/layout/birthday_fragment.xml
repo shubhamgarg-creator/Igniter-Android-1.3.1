@@ -1,0 +1,297 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/igniter_red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_left_arrow"
+            style="@style/igniter_clone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:text="@string/ic_left_arrow_key"
+            android:textColor="@color/gray_btn_text"
+            android:textSize="25sp" />
+
+        <com.obs.CustomTextView
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:paddingTop="8dp"
+            android:text="@string/birthday_title"
+            android:textColor="@color/black_text_color"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="80dp">
+
+        <com.obs.CustomEditText
+            android:id="@+id/edt_birthday"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/birthday_hint"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:textColor="@color/black_text_color"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code1"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:hint="@string/d"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusRight="@+id/edt_code2"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="18sp"
+                android:windowSoftInputMode="stateVisible" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code2"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:gravity="left"
+
+                android:hint="@string/d"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusRight="@+id/edt_code3"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+
+                android:textSize="18sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/edt_code3"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@color/white"
+                android:editable="false"
+                android:gravity="left"
+                android:maxLength="1"
+                android:nextFocusRight="@+id/edt_code4"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/backslash"
+                android:textSize="18sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code4"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/m"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusRight="@+id/edt_code5"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="18sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code5"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:digits="1234567890"
+                android:gravity="left"
+                android:hint="@string/m"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusRight="@+id/edt_code6"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="18sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/edt_code6"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.50"
+                android:background="@color/white"
+                android:editable="false"
+                android:gravity="left"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusDown="@+id/tv_continue"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/backslash"
+
+                android:textSize="18sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code7"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/y"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusDown="@+id/tv_continue"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+
+                android:textSize="18sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code8"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/y"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusDown="@+id/tv_continue"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+
+                android:textSize="18sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code9"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/y"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusDown="@+id/tv_continue"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="18sp" />
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_code10"
+                style="@style/proximanova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/y"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusDown="@+id/tv_continue"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/text_light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_birthday_description"
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/birthday_description"
+            android:textColor="@color/text_light_gray"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.obs.CustomButton
+        android:id="@+id/btn_continue"
+        style="@style/proximanova_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/oval_btn_gray"
+        android:text="@string/continue_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/gray_btn_text"
+        android:textSize="23sp" />
+
+</RelativeLayout>

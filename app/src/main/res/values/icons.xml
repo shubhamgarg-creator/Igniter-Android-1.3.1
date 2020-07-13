@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ic_chat">a</string>
+    <string name="ic_chat_1">b</string>
+    <string name="ic_close_btn">e</string>
+    <string name="ic_expand_arrow">g</string>
+    <string name="ic_expand_btn">h</string>
+    <string name="ic_go_back_left_arrow">j</string>
+    <string name="ic_hot_or_burn">m</string>
+    <string name="ic_icon">n</string>
+    <string name="ic_left_arrow_key">o</string>
+    <string name="ic_location_pin">p</string>
+    <string name="ic_pencil">s</string>
+    <string name="ic_photo_camera">u</string>
+    <string name="ic_share">A</string>
+    <string name="ic_show_three_dot_btn">B</string>
+    <string name="ic_smart_phone_call">D</string>
+    <string name="ic_star_btn">E</string>
+    <string name="ic_travel_bag_outline">H</string>
+    <string name="ic_univ_graduate_hat">I</string>
+    <string name="ic_user_black_bg">J</string>
+    <string name="ic_favorite">K</string>
+
+</resources>

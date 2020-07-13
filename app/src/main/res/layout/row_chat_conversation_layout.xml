@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_user_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:longClickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlt_user_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_other_msg_time"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:visibility="gone">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@color/gray"
+            android:tag="image_tag"
+            android:visibility="gone"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_user_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/civ_user_image"
+            android:layout_toStartOf="@+id/civ_user_image">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/chat_other_user_bg"
+                android:backgroundTint="@color/chat_outbound_bubble_background"
+                android:orientation="vertical">
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_user_message"
+                    style="@style/proximanova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/empty"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <com.obs.CustomTextView
+                    android:id="@+id/tv_time_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_message"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+
+                    android:textColor="@color/translucent_gray_light"
+                    android:textSize="10dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_user_msg_time"
+            style="@style/proximanova_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlt_user_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/light_gray"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_user_favorite"
+            style="@style/igniter_clone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/ic_favorite"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_other_user_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_other_msg_time"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_other_user_image"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@color/gray"
+            android:tag="image_tag"
+            android:visibility="gone"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_other_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/chat_user_bg">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_other_message"
+                style="@style/proximanova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="dsjglkdsajglkdsag"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_other_message"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/light_gray"
+                android:textSize="10dp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_other_favorite"
+            style="@style/igniter_clone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/ic_favorite"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/llt_other_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlt_other_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_other_username"
+                style="@style/proximanova_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black_text_color"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_other_msg_time"
+        style="@style/proximanova_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Mar 06,1.02 Pm"
+        android:textColor="@color/darkGray"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_title"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/verifying_number"
+        android:textColor="@color/text_light_gray"
+        android:textSize="21sp" />
+
+    <RelativeLayout
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tv_status"
+            style="@style/proximanova_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_rose_border"
+            android:gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_exclamatory"
+            android:text="@string/try_again_icon"
+            android:textColor="@color/color_accent"
+            android:textSize="50sp"
+            android:tint="@color/color_accent"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/custom_progress"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_confirm"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rect_accent_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/try_again"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>

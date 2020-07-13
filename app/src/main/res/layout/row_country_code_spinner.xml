@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_line_dark"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_country_flag"
+        style="@style/igniter_clone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/ic_location_pin"
+        android:textColor="@color/brown"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_country_name"
+        style="@style/proximanova_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/tv_country_flag"
+        android:layout_toLeftOf="@+id/tv_country_code"
+        android:layout_toRightOf="@+id/tv_country_flag"
+        android:layout_toStartOf="@+id/tv_country_code"
+        android:text="India"
+        android:textColor="@color/text_light_gray"
+        android:textSize="18sp" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_country_code"
+        style="@style/proximanova_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/empty"
+        android:textColor="@color/text_light_gray"
+        android:textSize="18sp" />
+
+</RelativeLayout>

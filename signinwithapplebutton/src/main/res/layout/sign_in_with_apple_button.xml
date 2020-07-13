@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingStart="@dimen/sign_in_with_apple_button_horizontalPadding"
+    android:paddingEnd="@dimen/sign_in_with_apple_button_horizontalPadding">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/sign_in_with_apple_button_textView_contentSpacing"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="hello" />
+</FrameLayout>

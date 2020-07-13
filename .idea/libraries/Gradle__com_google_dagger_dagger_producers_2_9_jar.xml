@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.dagger:dagger-producers:2.9@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-producers/2.9/159090ee31e1752408dedda6fa92ede36a312834/dagger-producers-2.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-producers/2.9/e2ce36c4033e80f6773fdcf6436c2e99577d27d7/dagger-producers-2.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

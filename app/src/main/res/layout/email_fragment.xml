@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/igniter_red" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/rlt_header_lay"
+            >
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_close"
+                style="@style/igniter_clone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="16dp"
+                android:text="@string/ic_close_btn"
+                android:textColor="@color/gray_btn_text"
+                android:textSize="26sp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tv_skip"
+                style="@style/proximanova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="16dp"
+                android:text="@string/skip"
+                android:textColor="@color/gray_btn_text"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <com.obs.CustomTextView
+            style="@style/proximanova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/rlt_header_lay"
+            android:paddingTop="8dp"
+            android:text="@string/email_title"
+            android:textColor="@color/black_text_color"
+            android:textSize="25sp" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+
+
+    </LinearLayout>-->
+
+    <com.obs.CustomEditText
+        android:id="@+id/edt_email"
+        style="@style/proximanova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:textColor="@color/black_text_color"
+        android:textColorHint="@color/light_gray"
+        android:textCursorDrawable="@drawable/cursorcolor"
+        android:textSize="25sp"
+        android:theme="@style/EditTextTheme"
+        android:windowSoftInputMode="stateVisible"></com.obs.CustomEditText>
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_email_description"
+        style="@style/proximanova_regular"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edt_email"
+        android:text="@string/email_description"
+        android:textColor="@color/text_light_gray"
+        android:textSize="16sp"
+        android:theme="@style/EditTextTheme" />
+
+    <com.obs.CustomButton
+        android:id="@+id/btn_signup"
+        style="@style/proximanova_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/oval_btn_gray"
+        android:text="@string/signup"
+        android:textAllCaps="true"
+        android:textColor="@color/gray_btn_text"
+        android:textSize="23sp" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.obs.CustomEditText
+                android:id="@+id/edt_username"
+                style="@style/proximanova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="54dp"
+                android:layout_marginRight="54dp"
+                android:background="@null"
+                android:inputType="textCapSentences"
+                android:maxLength="33"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text="@string/username_hint"
+                android:textColor="@color/text_light_gray"
+                android:textColorHint="@color/light_gray"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/usename_lke"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_likes" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_username_error"
+            style="@style/proximanova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/error_msg"
+            android:textColor="@color/color_accent"
+            android:textSize="16sp" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_username_length"
+            style="@style/proximanova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="33"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <com.obs.CustomTextView
+        android:id="@+id/tv_user_name"
+        style="@style/proximanova_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/curve_shape_background"
+        android:gravity="center"
+        android:padding="17dp"
+        android:text="@string/confirm"
+        android:textColor="@color/color_accent"
+        android:textSize="18sp" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/del_user_name"
+        style="@style/proximanova_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/curve_shape_background"
+        android:gravity="center"
+        android:padding="17dp"
+        android:text="@string/del"
+        android:textColor="@color/color_accent"
+        android:textSize="18sp" />
+</LinearLayout>

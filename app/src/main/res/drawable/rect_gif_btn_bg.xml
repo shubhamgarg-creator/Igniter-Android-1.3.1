@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/chat_other_user_bg" />
+
+            <corners android:radius="13dp" />
+
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontCustom">
+        <attr name="typeface" format="string" />
+        <attr name="message" format="string|reference" />
+        <attr name="messageColor" format="color" />
+        <attr name="messageTypeface" format="string" />
+        <attr name="minTextSize" format="dimension" />
+        <attr name="maxTextSize" format="dimension" />
+        <attr name="brandingLogo" format="string|reference" />
+        <attr name="spinner" format="string|reference" />
+    </declare-styleable>
+
+</resources>

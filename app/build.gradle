@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.neenbedankt.android-apt' // For Dagger injection
+apply plugin: 'io.fabric'
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+//        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+//    maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
+}
+
+allprojects {
+    repositories {
+        google()
+    }
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+        google()
+    }
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'igniter'
+            keyPassword 'igniter'
+            storeFile file('/home/trioangle/Siva/KeyStore/Product/igniter.jks')
+            storePassword 'igniter'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.trioangle.igniter"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 21
+        versionName "1.3.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    buildTypes {
+
+        release {
+
+            //Other parameters
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            //shrinkResources true
+            signingConfig signingConfigs.config
+            // signingConfig playStoreConfig //Add your own signing config
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "proguard-rules.pro"
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+
+            //Other parameters
+            debuggable true
+            jniDebuggable false
+            renderscriptDebuggable false
+            //shrinkResources true
+            // signingConfig playStoreConfig //Add your own signing config
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "proguard-rules.pro"
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    lintOptions {
+        checkReleaseBuilds false // Add this
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.google.dagger:dagger:2.24'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.24'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.24'
+    implementation 'com.google.dagger:dagger-android-support:2.24'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1' //Crashlytics
+
+    //api 'com.android.billingclient:billing:1.0'
+    implementation 'com.google.dagger:dagger:2.9'
+    implementation 'com.google.dagger:dagger-compiler:2.9'
+    /*apt 'com.google.dagger:dagger-compiler:2.9'
+                    compile 'com.google.dagger:dagger:2.9'*/
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    //implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    //implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'id.zelory:compressor:1.0.1'
+    implementation 'com.facebook.android:account-kit-sdk:4.23.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.24.0'
+    implementation project(path: ':custom-font-style-lib', configuration: 'default')
+    implementation project(path: ':photoview', configuration: 'default')
+    implementation project(path: ':image_cropping', configuration: 'default')
+    implementation project(path: ':signinwithapplebutton')
+    // implementation project(path:':instagramhelper', configuration: 'default')
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    /*implementation ('com.github.bumptech.glide:okhttp3-integration:4.0.0'){
+        exclude group: 'glide-parent'
+    }*/
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    testImplementation 'junit:junit:4.12'
+    //compile project(path:':swipedeck', configuration: 'default')
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation('com.hbb20:ccp:2.2.0', {
+        exclude group: 'com.android.support', module: 'support-v7'
+    })
+    //Countrycode
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'

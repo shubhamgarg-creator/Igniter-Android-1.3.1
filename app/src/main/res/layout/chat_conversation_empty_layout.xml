@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_empty_chat_conversation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/civ_empty_chat_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_name_msg"
+            style="@style/proximanova_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/you_matched"
+            android:textAlignment="center"
+            android:textColor="@color/text_very_dark"
+            android:textSize="20sp" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_name"
+            style="@style/proximanova_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name_msg"
+            android:singleLine="true"
+            android:text="Siva"
+            android:textAlignment="center"
+            android:textColor="@color/text_very_dark"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_empty_chat_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@color/gray"
+        app:borderWidth="0dp"
+        app:fabSize="auto"
+        app:useCompatPadding="true" />
+
+    <com.obs.CustomTextView
+        style="@style/proximanova_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_empty_chat_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/chat_msg"
+        android:textAlignment="center"
+        android:textColor="@color/text_very_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

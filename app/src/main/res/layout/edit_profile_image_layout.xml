@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlt_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rect_edit_profile_border">
+
+        <ImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_count"
+            style="@style/proximanova_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tv_add_icon"
+        style="@style/proximanova_bold"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/rlt_profile_image"
+        android:layout_alignEnd="@+id/rlt_profile_image"
+        android:layout_alignRight="@+id/rlt_profile_image"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginRight="-8dp"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/add_icon"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/tv_close_icon"
+        style="@style/proximanova_bold"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/rlt_profile_image"
+        android:layout_alignEnd="@+id/rlt_profile_image"
+        android:layout_alignRight="@+id/rlt_profile_image"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginRight="-8dp"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/close_icon"
+        android:visibility="gone" />
+
+    <!--<com.obs.CustomTextView
+        android:id="@+id/tv_add_icon"
+        style="@style/proximanova_bold"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/rlt_profile_image"
+        android:layout_alignEnd="@+id/rlt_profile_image"
+        android:layout_alignRight="@+id/rlt_profile_image"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginRight="-8dp"
+        android:background="@drawable/circle_plus_border"
+        android:gravity="center"
+        android:text="@string/plus_sign"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="visible" />-->
+
+    <!--<com.obs.CustomTextView
+        android:id="@+id/tv_close_icon"
+        style="@style/proximanova_bold"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/rlt_profile_image"
+        android:layout_alignEnd="@+id/rlt_profile_image"
+        android:layout_alignRight="@+id/rlt_profile_image"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginRight="-8dp"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:text="@string/close_sign"
+        android:textColor="@color/color_accent"
+        android:textSize="22sp"
+        android:visibility="gone" />-->
+
+</RelativeLayout>

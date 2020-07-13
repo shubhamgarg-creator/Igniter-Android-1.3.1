@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- text size -->
+    <dimen name="text_normal">14sp</dimen>
+
+    <dimen name="thumb_width">22dp</dimen>
+    <dimen name="thumb_height">22dp</dimen>
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="radius_corners">7dp</dimen>
+
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+</resources>

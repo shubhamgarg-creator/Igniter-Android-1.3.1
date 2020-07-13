@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_user_search_root"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@color/gray"
+        app:borderWidth="0dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:fabSize="auto"
+        app:useCompatPadding="true" />
+
+    <LinearLayout
+        android:id="@+id/llt_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/civ_user_image"
+        android:layout_toRightOf="@+id/civ_user_image"
+        android:orientation="horizontal">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tv_user_name"
+            style="@style/proximanova_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp" />
+
+        <com.obs.CustomCheckBox
+            android:id="@+id/cb_selection"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/selector_check_box"
+            android:button="@null"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/llt_user_name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/llt_user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/gray" />
+
+</RelativeLayout>
